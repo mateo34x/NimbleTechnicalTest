@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TakeSurvey">
+
+
+    <ImageView
+        android:id="@+id/backgroundS"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/blur"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/backgroundS"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/ic_back"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:fontFamily="@font/neuzeitsltstd_book"
+        android:letterSpacing="-0.03"
+        android:layout_marginTop="20dp"
+        android:maxWidth="350dp"
+        android:text="Working from home Check-In"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:translationY="0.1sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatButton" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.7"
+        android:letterSpacing="-0.02"
+        android:maxWidth="350dp"
+        android:text="We would like to know how you feel about our work from home (WFH) experience."
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:translationY="0.1sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="140dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_btn"
+        android:gravity="center"
+        android:text="Start Survey"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

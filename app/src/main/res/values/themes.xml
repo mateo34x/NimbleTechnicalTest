@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.NimbleTechnicalTest" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.NimbleTechnicalTest" parent="Base.Theme.NimbleTechnicalTest" />
+
+    <style name="StatusBarStyle" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="StatusBarStyle.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="StatusBarStyle.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="StatusBarStyle.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

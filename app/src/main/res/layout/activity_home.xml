@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151A"
+    tools:context=".MainActivity">
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        app:shimmer_duration="800">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/shimmerlayout" />
+        </RelativeLayout>
+
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/prueba"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:visibility="invisible">
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp" />
+
+        <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
+            android:id="@+id/worm_dots_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="-10dp"
+            android:layout_marginBottom="130dp"
+            app:dotsColor="@color/white"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="14dp"
+            app:dotsSpacing="8dp"
+            app:dotsStrokeColor="#A09D9D"
+            app:dotsStrokeWidth="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="42dp"
+            android:fontFamily="@font/neuzeitsltstd_book"
+            android:text="Monday, JUNE 15"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fecha"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/neuzeitsltstd_book"
+            android:text="Today"
+            android:textColor="@color/white"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/remainingTimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/texto"
+            android:layout_marginTop="5dp"
+            android:text="created_at"
+            android:layout_marginStart="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/takesurvey"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/worm_dots_indicator"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="-90dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/background_btn2"
+            android:drawableTop="@drawable/ic_next"
+            android:padding="13dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

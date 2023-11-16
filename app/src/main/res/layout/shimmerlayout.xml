@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#15151A"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="335dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="130dp"
+        android:alpha="0.12"
+        android:background="@drawable/background_shimmer"
+        android:fontFamily="@font/neuzeitsltstd_book"
+        android:gravity="bottom"
+        android:letterSpacing="-0.02"
+        android:lineHeight="34sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/section_label2"
+        android:layout_width="177dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.12"
+        android:background="@drawable/background_shimmer"
+        android:fontFamily="@font/neuzeitsltstd_book"
+        android:gravity="bottom"
+        android:letterSpacing="-0.02"
+        android:lineHeight="34sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/section_label3"
+        android:layout_width="117dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.12"
+        android:background="@drawable/background_shimmer"
+        android:fontFamily="@font/neuzeitsltstd_book"
+        android:gravity="bottom"
+        android:letterSpacing="-0.02"
+        android:lineHeight="34sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/section_label2" />
+
+
+    <TextView
+        android:id="@+id/section_label4"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.12"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_shimmer"
+        android:fontFamily="@font/neuzeitsltstd_book"
+        android:gravity="bottom"
+        android:letterSpacing="-0.02"
+        android:lineHeight="34sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/section_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.011"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/section_label5"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="20dp"
+        android:alpha="0.12"
+        android:background="@drawable/background_shimmer"
+        android:fontFamily="@font/neuzeitsltstd_book"
+        android:gravity="bottom"
+        android:letterSpacing="-0.02"
+        android:lineHeight="34sp"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/descripcion"
+        android:layout_width="259dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.10"
+        android:background="@drawable/background_shimmer"
+        android:letterSpacing="-0.02"
+        android:lineHeight="22sp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/section_label"
+        app:layout_constraintVertical_bias="0.133" />
+
+    <TextView
+        android:id="@+id/othertext"
+        android:layout_width="260dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="10dp"
+        android:alpha="0.10"
+        android:background="@drawable/background_shimmer"
+        android:letterSpacing="-0.02"
+        android:lineHeight="22sp"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/section_label"
+        app:layout_constraintVertical_bias="0.622" />
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="-10dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.12"
+        android:background="@drawable/background_shimmer"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toEndOf="@+id/descripcion"
+        app:layout_constraintTop_toBottomOf="@+id/section_label"
+        app:layout_constraintVertical_bias="0.866" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
