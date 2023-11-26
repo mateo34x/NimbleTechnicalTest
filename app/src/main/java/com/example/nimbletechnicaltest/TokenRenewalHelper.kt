@@ -192,7 +192,6 @@ class TokenRenewalHelper {
                                 val gson = Gson()
                                 val json = gson.toJson(SurveyListHolder.surveyList)
 
-                                // Guardar la lista en SharedPreferences
                                 editor.putString("surveylocal", json)
                                 editor.apply()
 
